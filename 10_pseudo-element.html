@@ -36,6 +36,43 @@
       li:not(.target) {
         color: aqua;
       }
+      /* 가상 요소 */
+      .required::after {
+        content: '*';
+        margin-right: 2px;
+        color: red;
+        font-size: 20px;
+      }
+      [data-tooltip] {
+        position: relative;
+      }
+      [data-tooltip]:hover::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        top: 0px;
+        left: 60px;
+        background-color: rgba(254, 0, 0, 0.24);
+        color: white;
+        width: 220px;
+      }
+      button {
+        background-color: antiquewhite;
+        border: 1px solid black;
+        border-radius: 5%;
+      }
+      .letter::first-letter {
+        font-size: 60px;
+        color: blue;
+      }
+      .line::first-line {
+        color: darkgrey;
+        background-color: antiquewhite;
+        font-weight: 900;
+      }
+      p::selection {
+        background-color: burlywood;
+        color: white;
+      }
     </style>
   </head>
   <body>
@@ -49,14 +86,14 @@
     <fieldset>
       <legend>focus, before, after</legend>
       <div class="field">
-        <labe for="name">이름</labe>
+        <labe class="required" for="name">이름</labe>
         <input type="text" id="name" />
       </div>
       <div class="field">
-        <label for="age">나이</label>
+        <label class="required" for="age">나이</label>
         <input type="text" id="age" />
       </div>
-      <button>보내기</button>
+      <button data-tooltip="이버튼을 클릭하여 정보를 보내세요.">보내기</button>
     </fieldset>
     <fieldset>
       <ul>
@@ -66,6 +103,38 @@
         <li>4element</li>
         <li>5element</li>
       </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>first-letter, first-line, section</legend>
+      <div>
+        <p class="letter">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam,
+          vel, architecto magnam consectetur corrupti quod provident ipsam optio
+          corporis magni ea. Eum accusantium debitis tempore iusto quod
+          architecto voluptatem delectus! Autem reprehenderit vitae odio odit
+          dolorem deleniti magni accusantium suscipit blanditiis. Tempora
+          delectus eius voluptate, aspernatur officiis neque necessitatibus
+          minus maxime quo, expedita eligendi ea quos porro corporis eaque
+          magni. Doloribus quis perspiciatis suscipit sapiente eius aperiam
+          nihil atque maiores similique, dolorem itaque quo ex iste facilis
+          dicta non iure minus sint beatae? Qui, illum dolorem deserunt eos
+          aperiam iste?
+        </p>
+        <p class="line">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut totam
+          corrupti nobis quam voluptatum delectus explicabo labore aliquid
+          reiciendis optio fugit hic, quaerat quas, illum at quibusdam soluta
+          sit eos. In quidem odio mollitia repudiandae quibusdam eligendi
+          facilis, non maxime delectus et tempora dignissimos eveniet facere,
+          omnis error! Voluptates explicabo praesentium quis temporibus,
+          reiciendis itaque. Temporibus doloremque error nisi vero! Eius placeat
+          nesciunt doloremque accusantium sequi maiores, consequatur
+          consequuntur quidem consectetur error magni, cupiditate, dolorum quo
+          rerum! Illo molestiae molestias optio amet quod minus sit aperiam nam?
+          Vitae, perferendis aliquam.
+        </p>
+      </div>
     </fieldset>
   </body>
 </html>
