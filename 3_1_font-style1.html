@@ -8,13 +8,20 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
       * {
-        margin: 0px;
+        margin: 10px;
         padding: 0px;
       }
+      a {
+        font-size: 40px;
+        text-decoration-line: none;
+        color: rgb(26, 213, 26);
+        font-weight: 1000;
+        background-color: rgb(213, 238, 213);
+      } 
       html {
         /* font-family: serif, monospace; */
         font-family: 'Nanum Gothic', sans-serif;
-        font-size: 40px;
+        font-size: 20px;
       }
       .title {
         font-size: 40px;
@@ -30,30 +37,46 @@
         font-size: 20px;
       }
       .subtitle-rem {
-        font-size: 2rem;
+        font-size: 1.5rem;
+      }
+      .subtitle-em {
+        font-size: 2em;
       }
       .rectangle.width {
-        width: 100vw;
+        width: 10vw;
         height: 100px;
-        background-color: blue;
+        background-color: rgb(159, 152, 171);
+      }
+      li {
+        font-size: 20px;
+        color: blueviolet;
+        font-style: inherit;
       }
     </style>
   </head>
   <body>
-    <h2 class="title">유튜브 짐코딩</h2>
-    <p class="content">실용적인 코딩</p>
-    <p class="content-">실용적인 코딩</p>
-
+    <center>
+      <a href="https://www.naver.com" target="_blank"">NAVER</a>
+    </center>
+    <h2 class="title">박신향</h2>
+    <p class="content">박신향</p>
+    <p class="content-">박신향</p>
+    <hr />
     <h2>px</h2>
-    <p class="subtitle">실용적인 코딩</p>
+    <p class="subtitle">박신향</p>
     <h2 class="subtitle-rem">rem</h2>
-    <p>실용적인 코딩</p>
-    <h2>em</h2>
-    <p>실용적인 코딩</p>
+    <p>박신향</p>
+    <h2 class="subtitle-em">em</h2>
+    <p>박신향</p>
     <hr />
     <h2>vw</h2>
     <div class="rectangle width"></div>
     <h2>vh</h2>
     <div class="rectangle height"></div>
+    <ul>
+      <li>박</li>
+      <li>신</li>
+      <li>향</li>
+    </ul>
   </body>
 </html>

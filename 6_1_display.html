@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <style>
+      div {
+        border: 1px solid black;
+      }
+      span,
+      a {
+        border: 1px solid blue;
+      }
+      article > div,
+      article > span {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Display Block</h1>
+    <div>content</div>
+    <h2>title</h2>
+    <div>content</div>
+    <h2>title</h2>
+    <div>content</div>
+    <h2>title</h2>
+
+    <span>박신향</span>
+    <a href="#">박신향</a>
+    <span>박신향</span>
+    <a href="#">박신향</a>
+    <span>박신향</span>
+    <a href="#">박신향</a>
+
+    <h2>Display inline block</h2>
+    <article>
+      <div>content</div>
+      <div>content</div>
+      <div>content</div>
+      <span>content</span>
+      <span>content</span>
+      <span>content</span>
+    </article>
+  </body>
+</html>
