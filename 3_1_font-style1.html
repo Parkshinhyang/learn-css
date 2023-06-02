@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Style1</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      html {
+        /* font-family: serif, monospace; */
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 40px;
+      }
+      .title {
+        font-size: 40px;
+      }
+      .content {
+        font-size: 40px;
+      }
+      .content- {
+        font-style: italic;
+        font-size: 40px;
+      }
+      .subtitle {
+        font-size: 20px;
+      }
+      .subtitle-rem {
+        font-size: 2rem;
+      }
+      .rectangle.width {
+        width: 100vw;
+        height: 100px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="title">유튜브 짐코딩</h2>
+    <p class="content">실용적인 코딩</p>
+    <p class="content-">실용적인 코딩</p>
+
+    <h2>px</h2>
+    <p class="subtitle">실용적인 코딩</p>
+    <h2 class="subtitle-rem">rem</h2>
+    <p>실용적인 코딩</p>
+    <h2>em</h2>
+    <p>실용적인 코딩</p>
+    <hr />
+    <h2>vw</h2>
+    <div class="rectangle width"></div>
+    <h2>vh</h2>
+    <div class="rectangle height"></div>
+  </body>
+</html>
