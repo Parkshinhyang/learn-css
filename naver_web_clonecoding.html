@@ -158,13 +158,13 @@
         font-weight: 900;
       }
       main {
-        width: 1390px;
+        width: 1280px;
         margin-top: 50px;
         background: #ffffff;
         min-height: 800px;
+        margin: 50px auto;
       }
       .main_layout_left {
-        margin-left: 150px;
         float: left;
         text-align: center;
       }
@@ -214,16 +214,76 @@
         font-weight: 700;
         margin-left: 270px;
       }
+      #news_table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 800px;
+        height: 280px;
+        margin: 15px auto;
+        border-radius: 8px;
+        border: 1px solid lightgray;
+      }
+      #news_table th,
+      #news_table td {
+        border: 1px solid lightgray;
+      }
+      th > a > img,
+      td > a > img {
+        width: 50px;
+        height: 20px;
+      }
+      .news_index {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        width: 828px;
+        height: 65px;
+        border-top: 1px solid lightgray;
+        padding: 14px;
+      }
+      .news_index > a > img {
+        width: 10px;
+        height: 10px;
+        margin: 12.5px auto;
+        display: block;
+      }
+      .news_index > #button_left > img {
+        transform: scaleX(-1);
+      }
+      #index {
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 700;
+        width: 145px;
+        height: 30px;
+        margin: 0 auto;
+        vertical-align: baseline;
+      }
+      #button_left,
+      #button_right {
+        position: relative;
+        width: 36px;
+        height: 36px;
+        display: inline-block;
+        border: 1px solid lightgray;
+        border-radius: 50%;
+        vertical-align: middle;
+        cursor: pointer;
+      }
+      #buttom_left:hover,
+      #button_right:hover {
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.06);
+      }
       .main_layout_right {
         text-align: center;
         float: right;
-        width: 410px;
+        width: 450px;
         height: 800px;
-        padding: 0px 20px 0px 20px;
+        padding: 0px 20px 0px 15px;
       }
       .main_login {
         align-items: center;
-        width: 380px;
+        width: 430px;
         height: 150px;
         border: 2px solid lightgray;
         border-radius: 8px;
@@ -261,11 +321,70 @@
         font-size: 13px;
         padding-top: 5px;
       }
+      .main_ad {
+        margin-bottom: 10px;
+        margin-right: 50px;
+      }
       .main_ad > a > img {
-        width: 380px;
+        width: 430px;
         height: 220px;
         border: 2px solid lightgray;
         border-radius: 8px;
+      }
+      .main_weather {
+        width: 430px;
+        height: 180px;
+        border: 2px solid lightgray;
+        border-radius: 8px;
+      }
+      .weather_bar {
+        position: relative;
+        width: 400px;
+        height: 50px;
+        padding: 6px;
+        margin: 0 auto;
+        padding: 6px 0px;
+        line-height: 50px;
+        border-bottom: 1px solid lightgray;
+      }
+      .bar_left {
+        float: left;
+        color: black;
+        font-weight: 900;
+        margin-right: 5px;
+      }
+      .bar_center {
+        width: 60px;
+        height: 20px;
+        float: left;
+        line-height: 50px;
+        font-size: 10px;
+      }
+      .bar_right {
+        float: right;
+        font-size: 13px;
+      }
+      .weather_content {
+        position: relative;
+        width: 330px;
+        height: 120px;
+        margin: 0 auto;
+      }
+      .weather_left_top {
+        position: absolute;
+      }
+      .weather_left_top_bottom {
+        margin: 0;
+      }
+      .weather_left_bottom {
+        position: absolute;
+        width: 165px;
+        font-size: 13px;
+        bottom: 0px;
+      }
+      .weather_right {
+        position: absolute;
+        right: 0;
       }
       footer {
         width: 1080px;
@@ -481,8 +600,8 @@
           <div class="news_contents">
             <div class="leftside">
               <a href="/" style="color: black"
-                >분야별 뉴스 <img src="/assets/images/news_more.png" alt="" />
-                <span class="news_slash">|</span>
+                >분야별 뉴스<img src="/assets/images/news_more.png" alt="" />
+                <span class="news_slash" style="text-decoration: none"> |</span>
               </a>
             </div>
             <div class="centerside">
@@ -500,6 +619,198 @@
                 >뉴스홈</a
               >
             </div>
+          </div>
+          <table id="news_table">
+            <tr>
+              <th>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/009.png"
+                    alt=""
+                /></a>
+              </th>
+              <th>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png"
+                    alt=""
+                /></a>
+              </th>
+              <th>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/up/2022/0905/nsd131925414.png"
+                    alt=""
+                /></a>
+              </th>
+              <th>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/006.png"
+                    alt=""
+                /></a>
+              </th>
+              <th>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/326.png"
+                    alt=""
+                /></a>
+              </th>
+              <th>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/2019/logo/011.png"
+                    alt=""
+                /></a>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/056.png"
+                    alt=""
+                /></a>
+              </td>
+              <td>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/038.png"
+                    alt=""
+                /></a>
+              </td>
+              <td>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/277.png"
+                    alt=""
+                /></a>
+              </td>
+              <td>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/047.png"
+                    alt=""
+                /></a>
+              </td>
+              <td>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/up/2020/0610/nsd151458769.png"
+                    alt=""
+                /></a>
+              </td>
+              <td>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/up/2020/0903/nsd185255316.png"
+                    alt=""
+                /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/368.png"
+                    alt=""
+                /></a>
+              </td>
+              <td>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/003.png"
+                    alt=""
+                /></a>
+              </td>
+              <td>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/015.png"
+                    alt=""
+                /></a>
+              </td>
+              <td>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/391.png"
+                    alt=""
+                /></a>
+              </td>
+              <td>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/983.png"
+                    alt=""
+                /></a>
+              </td>
+              <td>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/334.png"
+                    alt=""
+                /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/440.png"
+                    alt=""
+                /></a>
+              </td>
+              <td>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/up/2022/1006/nsd205818702.png"
+                    alt=""
+                /></a>
+              </td>
+              <td>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/up/2021/1221/nsd15292271.png"
+                    alt=""
+                /></a>
+              </td>
+              <td>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/952.png"
+                    alt=""
+                /></a>
+              </td>
+              <td>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/up/2022/1024/nsd174430433.png"
+                    alt=""
+                /></a>
+              </td>
+              <td>
+                <a href="/"
+                  ><img
+                    src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/971.png"
+                    alt=""
+                /></a>
+              </td>
+            </tr>
+          </table>
+          <div class="news_index">
+            <a href="#" id="button_left"
+              ><img src="/assets/images/index_arrow.png" alt=""
+            /></a>
+            <p id="index">
+              <span style="color: #3a67ea">언론사 </span
+              ><span style="color: #606060">더보기 </span
+              ><span style="color: #606060">1</span
+              ><span style="color: #60606080">/21</span>
+            </p>
+            <a href="#" id="button_right"
+              ><img src="/assets/images/index_arrow.png" alt=""
+            /></a>
           </div>
         </div>
       </div>
@@ -521,11 +832,55 @@
           </div>
         </div>
         <div class="main_ad">
-          <a href="/"
+          <a href="/" target="_blank"
             ><img
               src="https://ssl.pstatic.net/melona/libs/1451/1451529/bbb703befa4403a529b1_20230515094206275.jpg"
               alt=""
           /></a>
+        </div>
+        <div class="main_weather">
+          <div class="weather_bar">
+            <a href="/" class="bar_left">날씨</a>
+            <a
+              href="https://weather.naver.com/today/16800250?&targetId=compare"
+              class="bar_center"
+              >예보 비교</a
+            >
+            <span class="bar_right">단양군 단양읍</span>
+          </div>
+          <div class="weather_content">
+            <div class="weather_left_top">
+              <a
+                href="https://weather.naver.com/today/16800250?cpName=KMA"
+                target="_blank"
+                style="text-decoration: none"
+              >
+                <img src="/assets/images/weather_pic.png" alt="" />
+                <p class="weather_left_top_bottom">
+                  <span style="color: #3172e7">16°</span>/<span
+                    style="color: #cd3534"
+                    >28°</span
+                  >
+                </p>
+              </a>
+            </div>
+            <div class="weather_left_bottom">
+              <a
+                href="https://weather.naver.com/air/16800250"
+                style="font-weight: 700"
+                ><span>미세 </span><span style="color: #02c73c">보통</span
+                ><span style="font-size: 20px; color: #88888884"> · </span
+                ><span>초미세 </span><span style="color: #02c73c">보통</span></a
+              >
+            </div>
+            <div class="weather_right">
+              <a
+                href="https://weather.naver.com/today/16800250?cpName=KMA"
+                target="_blank"
+                ><img src="/assets/images/today_weather.png" alt=""
+              /></a>
+            </div>
+          </div>
         </div>
       </div>
     </main>
